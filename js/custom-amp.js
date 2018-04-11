@@ -27,5 +27,18 @@ var ampCustom = {
                 `;
             }
         });
+    },
+    putMobile: (element) => {
+        jQuery(document).ready( () => {
+            if (!ampCustom.checkMobile()) {
+                element.innerHTML = `
+                    <amp-ad 
+                        width=300 height=250
+                        type="doubleclick"
+                        data-slot="/63888804/Politica-Nota_300x250C">
+                        </amp-ad>
+                `;
+            }
+        });
     }
 }
